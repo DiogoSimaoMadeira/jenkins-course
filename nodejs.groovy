@@ -1,6 +1,6 @@
 job('NodeJS Helloword{
     scm {
-        git('git://https://github.com/DiogoSimaoMadeira/Node-Helloword.git') {  node -> // is hudson.plugins.git.GitSCM
+        git('git://github.com/DiogoSimaoMadeira/Node-Helloword.git') {  node -> // is hudson.plugins.git.GitSCM
             node / gitConfigName('DSL User')
             node / gitConfigEmail('diogo.simao.madeira@gmail.com')
         }
