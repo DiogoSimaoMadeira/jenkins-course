@@ -1,9 +1,6 @@
-job('NodeJS example') {
+job('NodeJS HelloWorld') {
     scm {
-        git('git://github.com/DiogoSimaoMadeira/Node-Helloword.git') {  node -> // is hudson.plugins.git.GitSCM
-            node / gitConfigName('DSL User')
-            node / gitConfigEmail('jenkins-dsl@newtech.academy')
-        }
+        git('git://github.com/DiogoSimaoMadeira/Node-Helloword.git') 
     }
     triggers {
         scm('H/5 * * * *')
